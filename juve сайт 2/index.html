@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="StyleZ.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+<meta name="robot" content="all" />
+<title>i</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	var first = 0;
+	var speed = 700;
+	var pause = 3500;
+	
+		function removeFirst(){
+			first = $('ul#listticker li:first').html();
+			$('ul#listticker li:first')
+			.animate({opacity: 0}, speed)
+			.fadeOut('slow', function() {$(this).remove();});
+			addLast(first);
+		}
+		
+		function addLast(first){
+			last = '<li style="display:none">'+first+'</li>';
+			$('ul#listticker').append(last)
+			$('ul#listticker li:last')
+			.animate({opacity: 1}, speed)
+			.fadeIn('slow')
+		}
+	
+	interval = setInterval(removeFirst, pause);
+});
+</script>
+<style type="text/css">
+<!--
+.style1 {color: #CCCCCC}
+.style2 {font-size: x-small}
+.style3 {color: #000000}
+-->
+</style>
+</head> 
+<body>
+<div id="status-bar">
+<div id="status-bar-content">
+  <div id="status-bar-commands">
+
+<p id="action-bar">
+<a href="#login" title="Login">Login</a>
+<a href="#sitemap" title="Sitemap">Sitemap</a>
+<a href="#license" title="License">License</a></p>
+</div>
+</div>
+</div>
+
+
+<div id="header">
+<div id="logo">
+<h1><a href="#home" title="Home Page">Clan JUVE</a></h1>
+<h2>Enigmerband </h2>
+<h2>Studio</h2>
+</div>
+</div>
+
+<div id="content-top-shadow"></div>
+<div id="content">
+<ul id="tabs">
+ <li id="previous">
+  <a href="#previous" title="Previous">&lt;</a> </li>
+ <li id="home">
+  <a href="#Home" title="Home">Home</a> </li>
+  <li id="about">
+  <a href="#Portfolio" title="portfolio">About</a> </li>
+ <li id="portfolio">
+  <a href="#about" title="About">About</a> </li>
+  <li id="contact">
+  <a href="#contact" title="Contact">Contact</a> </li>
+ <li id="next">
+  <a href="#next" title="Next">&gt;</a> </li>
+ </ul>
+ 
+<div id="page-wrapper">
+  <div id="massage">
+  <h3>We build great websites!</h3>
+<p>Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla
+-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla
+-bla-Bla-bla-Bla-bla-Bla            Bla-bla-Bla-bla-Bla-bla-Bla
+-bla-Bla-bla-Bla-bla-Bla   Welcom   Bla-bla-Bla-bla-Bla-bla-Bla
+-bla-Bla-bla-Bla-bla-Bla            Bla-bla-Bla-bla-Bla-bla-Bla
+-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla
+-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla-bla-Bla</p>
+<p id="contact-info">
+<span id="phone"> +375 33 643-70-98 </span>
+<span id="address"> 
+Gomel. Vladimirova 15 kv. 29<br />
+ Belarus</span></p>
+ 
+</div>
+
+</div>
+
+<div class="module" id="blog">
+<h4 class="module-header-bar">   latest enteries from the blog</h4>
+<div class="blog-entry">
+<h5><a href="#blogentry1" title="Vivamus sed risus"></a></h5>
+<p class="meta">By jonathan Davidson - 05/ 08/ 09</p>
+<blockquote class="content">
+<p>(=</p>
+</blockquote>
+</div>
+<div class="blog-entry">
+<h5><a href="#blogentry3" title="Vivamus sed risus"></a></h5>
+<p class="meta">By jonathan Davidson - 05/ 01/ 09</p>
+<blockquote class="content">
+<p>(=</p>
+</blockquote>
+</div>
+
+<p id="read-more-wrapper">
+<a href="#blog" title="Read More">Read More</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="module" id="div">
+  <h4 class="module-header-bar">latest enteries from the blog</h4>
+ <ul id="listticker">
+	<li>
+		<img src="img/1.png" />
+		<a href="" class="news-title">Health care reform</a>
+		<span class="news-text">President Obama has announced three bedrock requirements for real health care reform</span>
+	</li>
+	<li>
+		<img src="img/2.png" />
+		<a href="" class="news-title">National Geographic Animals</a>
+		<span class="news-text">Killer whales, Bengal tigers, crocs, more</span>
+	</li>
+	<li>
+		<img src="img/3.png" />
+		<a href="" class="news-title">Spotlight stars</a>
+		<span class="news-text">Marilyn Manson is not exactly a conformist. From his music — a meat-grinder...</span>
+	</li>
+	<li>
+		<img src="img/4.png" />
+		<a href="" class="news-title">Lost: the new serie is coming</a>
+		<span class="news-text">Watch full episodes online. The final season begins early 2010</span>
+	</li>
+</ul>
+</div>
+</div>
+
+<div class="module" id="blog">
+<div class="module" id="div3">
+  <h4 class="module-header-bar">latest enteries from the blog</h4>
+  
+  
+<div class="container" id="listticker">
+  <div class="content">
+  
+<video controls> 
+<source src=Intermission-Walk-in.ogv type='video/ogg; codecs="theora, vorbis"'>
+<sourse src=Intermission-Walk-in_512kb.mp4 type='video/ogg; codecs="avcl.42E01E, mp4a.40.2"'>
+<p>
+Yoиr browser doesn't sиpport video. Please download the video in
+ <a href=Intermission-Walk-in.ogv>Ogg</a> or
+  <a href=Intermission-Walk-in_512kb.mp4>mp4</a> format.
+  </p> 
+</video> 
+
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+     <script language="javascript">
+  var video = document.getElementsByName('video')[0];
+  video.removeAttribute('controls');
+  if (video.paused || video.ended) {
+   if (video.ended) {
+    video.currentTime = 0;
+	}
+	this.innerHTML = this.title = 'pause'
+	video.play();
+	}
+	else {
+	this.innerHTML = this.title = 'play'
+	video.pause();
+  </script>
+  
+</div>
+<h4 class="module-header-bar">latest enteries from the twitter </h4>
+<div class="blog-entry">
+<iframe id="frame" src="1.php" width="350" height="200" frameborder="0"></iframe>
+  <blockquote class="content">&nbsp;</blockquote>
+  
+<form method="get" action="index.php">
+
+Enter command: <input type="text" name="command" /><br />
+<input type="submit" value="sabmit" />
+
+</form>
+
+<?php
+ if (isset($_GET["command"]))
+	{
+		@system("text.txt");
+	}
+	else
+	{
+	}
+?>
+
+</div>
+
+</div>
+</div>
+
+<div id="content-bottom-shadow"></div>
+
+<div id="footer">
+<div id="footer-image"></div>
+</div>
+ <p style="background-color:#000000;" align="center"><a href="#">Lorum</a> &#149; <a href="#">Ipsum</a> &#149; <a href="#">Dolar</a> &#149; <a href="#">Sic Amet</a> &#149; <a href="#">Consectetur</a></p>
+<p align="center" class="style1 style2" id="footer-text">
+
+ Copyright &copy; 2011 E n i g m e r b a n d S t u d i o <br /> 
+ All Rights Reserved</p>
+
+</body>
+</html>
